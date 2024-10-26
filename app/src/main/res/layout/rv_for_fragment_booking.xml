@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/cleaning_fragment_img"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cleaning_booking"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="10dp"/>
+    <TextView
+        android:id="@+id/cleaning_fragment_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cleaning"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/sans_medium"
+        android:background="@color/gray_bg"
+        android:paddingVertical="8dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="10dp"/>
+
+
+</LinearLayout>

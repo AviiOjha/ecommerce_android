@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="18dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="@dimen/productWidth"
+            android:layout_height="@dimen/productHeight"
+            android:scaleType="centerCrop"
+            android:src="@drawable/deal_img1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deals_countdown"
+            android:textColor="@color/red"
+            android:textSize="@dimen/countdown"
+            android:background="#f2ffffff"
+            android:layout_gravity="bottom"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="3dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/sans_medium"/>
+
+    </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/productName"
+            android:text="@string/printed_pure_cotton_suit"
+            android:textStyle="bold"
+            android:fontFamily="@font/sans_medium"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="1dp">
+
+            <TextView
+                android:id="@+id/mrp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mrp"
+                android:textSize="@dimen/productMrp_and_dealPrice"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sans_medium"/>
+
+            <TextView
+                android:id="@+id/deal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deal_price"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:textSize="@dimen/productMrp_and_dealPrice"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/sans_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="1dp">
+
+            <TextView
+                android:id="@+id/deal_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deal_discount"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/dealDisc_and_ExpiryText"
+                android:fontFamily="@font/sans_medium"/>
+
+            <TextView
+                android:id="@+id/discount_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/disc_25_percent"
+                android:textColor="@color/red"
+                android:textSize="@dimen/discPercent"
+                android:textStyle="normal"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/sans_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="1dp">
+
+            <TextView
+                android:id="@+id/expiry_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expiry_on"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/dealDisc_and_ExpiryText"
+                android:fontFamily="@font/sans_medium"/>
+
+            <TextView
+                android:id="@+id/expiry_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/expiry_date"
+                android:textSize="@dimen/dealDisc_and_ExpiryText"
+                android:textColor="#000000"
+                android:textStyle="normal"
+                android:layout_marginStart="10dp"
+                tools:ignore="SmallSp"
+                android:fontFamily="@font/sans_medium"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+
+
+</LinearLayout>
