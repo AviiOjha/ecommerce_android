@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="productName">16sp</dimen>
+    <dimen name="productDescription">15sp</dimen>
+    <dimen name="productMrp_and_dealPrice">15sp</dimen>
+    <dimen name="productDiscount">15sp</dimen>
+    <dimen name="dealDisc_and_ExpiryText">14sp</dimen>
+    <dimen name="discPercent">15sp</dimen>
+    <dimen name="countdown">15sp</dimen>
+
+    <dimen name="productWidth">170dp</dimen>
+    <dimen name="productHeight">230dp</dimen>
+
+    <dimen name="sectionHeading">20sp</dimen>
+    <dimen name="seeAll">18sp</dimen>
+</resources>

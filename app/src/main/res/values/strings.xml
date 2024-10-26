@@ -1,0 +1,43 @@
+<resources>
+    //for activity_main
+    <string name="app_name">Exobe</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="shop_by_categories">Shop By Categories</string>
+    <string name="see_all">See all</string>
+    <string name="deals">Deals</string>
+    <string name="products">Products</string>
+    <string name="service_categories">Service Categories</string>
+
+    //for categories_list
+    <string name="cat_baby">Baby</string>
+
+    //for product_deal
+    <string name="printed_pure_cotton_suit">Printed Pure Cotton Suit</string>
+    <string name="hurry">HURRY!</string>
+    <string name="mrp">Rs 5000.00</string>
+    <string name="deal_price">Rs 3750.00</string>
+    <string name="deal_discount">Deal Discount:</string>
+    <string name="disc_25_percent">25% Off</string>
+    <string name="expiry_on">Expiry on:</string>
+    <string name="expiry_date">2023-07-29 12:01 PM</string>
+    <string name="deals_countdown">7D:4H:44M:59S</string>
+
+    //for products_list
+    <string name="services_subhead">Render Our Services At Your Doorsteps</string>
+    <string name="phone_title">Samsung fold phone new</string>
+
+    //for service_categories
+    <string name="cleaning_services">Cleaning Services</string>
+    <string name="cleaning_description">Cleaning is the process...</string>
+
+    //Miscellaneous
+    <string name="user_name">Avinash Ojha</string>
+    <string name="booking">Booking</string>
+    <string name="category">Category</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="settings">Settings</string>
+    <string name="your_cart_is_empty">Your Cart is Empty</string>
+    <string name="empty_cart_description"><![CDATA[Looks like you have not added anything to your cart. \nGo ahead & explore top categories.]]></string>
+
+</resources>

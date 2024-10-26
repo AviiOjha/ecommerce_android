@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="25dp">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="3dp"
+            android:background="@drawable/rounded_line"
+            android:layout_marginBottom="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_break"/>
+
+        <TextView
+            android:id="@+id/drawerDealsOnProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deals on products"
+            android:textSize="18sp"
+            android:fontFamily="@font/sans_medium"
+            android:paddingVertical="22dp"
+            android:textColor="@color/black"
+            android:visibility="visible"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_break"/>
+
+        <TextView
+            android:id="@+id/drawerDealsOnServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deals on services"
+            android:textSize="18sp"
+            android:fontFamily="@font/sans_medium"
+            android:paddingVertical="22dp"
+            android:textColor="@color/black"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

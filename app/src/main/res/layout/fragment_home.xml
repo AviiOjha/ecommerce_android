@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp">
+        </View>
+
+        <!--    Search bar starts here-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="15dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/search_bar_bg"
+            >
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_search_24"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/border_color"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <!--    Search bar ends here-->
+
+        <!--    Scroll view elements start here-->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--    Shop by categories-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shop_by_categories"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="25dp"
+                        android:textSize="@dimen/sectionHeading"
+                        android:fontFamily="@font/sans_bold"/>
+                    <TextView
+                        android:id="@+id/seeAllForCategories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/see_all"
+                        android:layout_marginEnd="25dp"
+                        android:textAlignment="gravity"
+                        android:gravity="end"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/seeAll"
+                        android:fontFamily="@font/sans_medium"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_main_banner"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="15dp"/>
+
+                <!--    Deals on products-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deals"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="25dp"
+                        android:textSize="@dimen/sectionHeading"
+                        android:fontFamily="@font/sans_bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/see_all"
+                        android:textSize="@dimen/seeAll"
+                        android:layout_marginEnd="25dp"
+                        android:textAlignment="gravity"
+                        android:gravity="end"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/sans_medium"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_deals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"/>
+
+                <!--    Products-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/products"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="25dp"
+                        android:textSize="@dimen/sectionHeading"
+                        android:fontFamily="@font/sans_bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/see_all"
+                        android:textSize="@dimen/seeAll"
+                        android:layout_marginEnd="25dp"
+                        android:textAlignment="gravity"
+                        android:gravity="end"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/sans_medium"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"/>
+
+                <!--    Service Categories-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_categories"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="25dp"
+                        android:textSize="@dimen/sectionHeading"
+                        android:fontFamily="@font/sans_bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/see_all"
+                        android:textSize="@dimen/seeAll"
+                        android:layout_marginEnd="25dp"
+                        android:textAlignment="gravity"
+                        android:gravity="end"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/sans_medium"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/services_subhead"
+                    android:textColor="#606060"
+                    android:layout_marginStart="25dp"
+                    android:textSize="@dimen/productDescription"
+                    android:layout_marginBottom="10dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_service_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"/>
+
+                <!--    Deals on services -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deals"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="25dp"
+                        android:textSize="@dimen/sectionHeading"
+                        android:fontFamily="@font/sans_bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/see_all"
+                        android:textSize="@dimen/seeAll"
+                        android:layout_marginEnd="25dp"
+                        android:textAlignment="gravity"
+                        android:gravity="end"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/sans_medium"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_service_deals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
